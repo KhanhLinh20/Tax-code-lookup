@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('✅ Tax Code Lookup Server is running!');
+  res.send('✅ Server is running!');
 });
 
 app.post('/api/tra-mst', async (req, res) => {
