@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "tra-mst-playwright": "file:",
     "playwright": "^1.51.1"
   }
 }
