@@ -12,11 +12,11 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.0",
-    "playwright": "^1.51.1"
+    "@types/node": "^22.14.0"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "tra-mst-playwright": "file:"
+    "tra-mst-playwright": "file:",
+    "playwright": "^1.51.1"
   }
 }
