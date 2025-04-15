@@ -6,6 +6,10 @@ const { traCuu1CCCD } = require('./traMST');
 const app = express();
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('✅ Tax Code Lookup Server is running!');
+});
+
 app.post('/api/tra-mst', async (req, res) => {
   const { cccds } = req.body;
 
