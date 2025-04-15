@@ -36,7 +36,7 @@ app.post('/api/tra-mst', async (req, res) => {
     return res.json(results);
   } catch (err) {
     if (browser) await browser.close();
-    return res.status(500).json({ error: 'Lỗi server', details: err.message });
+    return res.status(500).json({ error: err, details: err.message });
   }
 });
 
