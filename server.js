@@ -15,7 +15,7 @@ app.post('/api/tra-mst', async (req, res) => {
 
   let browser;
   try {
-    browser = await chromium.launch({ headless: false, slowMo: 100 });
+    browser = await chromium.launch({ headless: true, slowMo: 100 });
     context = await browser.newContext({
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115 Safari/537.36',
         viewport: { width: 1280, height: 800 }
